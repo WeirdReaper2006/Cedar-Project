@@ -26,3 +26,9 @@ print (num1 + num2)
 print ("My number is {0}. Your number is {1}.".format(num1,num2))
 #Alt method:
 print (f"My number is {num1}. Your number is {num2}.")
+
+x = int(input("Enter a number: "))
+if x < 0:
+    print ("Negative")
+else:
+    print ("Positive")
