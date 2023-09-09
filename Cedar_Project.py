@@ -51,10 +51,10 @@ else:
 #Q3) Ask user if he/she is on vacation and if it is a weekday. output if the user can sleep in late
 vacation = bool(input("Are you on vacation?"))
 weekday = bool(input("is it a weekday?"))
-if vacation or weekday:
+if vacation or  not weekday:
     print("Sojao")
 else:
-    print("You are safe")
+    print("You have to wake up")
     
 #Q4) Ask user for their lucky number and output if the lucky number is odd or even
 lucky_num = int(input("What's your lucky number: "))
