@@ -32,3 +32,10 @@ if x < 0:
     print ("Negative")
 else:
     print ("Positive")
+    
+#Q1) Ask user for their age and output if the user is an adult or not
+age = int(input("Enter age: "))
+if age >= 18:
+    print ("You're an Adult")
+else:
+    print ("You're not an Adult")
