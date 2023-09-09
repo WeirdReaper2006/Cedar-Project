@@ -15,9 +15,10 @@ print ("My number is",var)
 #Alternate method is:
 #print (f"My number is {var}")
 
-name = input("Enter your name:")
+name = input("Enter your name: ")
 print (f"Hello {name}")
 
-num1 = int(input("Enter firt number"))
-num2 = int(input("Enter second number"))
+num1 = int(input("Enter firt number: "))
+num2 = int(input("Enter second number: "))
 print (num1 + num2)
+
