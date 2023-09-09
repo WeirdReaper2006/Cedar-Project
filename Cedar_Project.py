@@ -33,32 +33,54 @@
 # else:
 #     print ("Positive")
     
-#Q1) Ask user for their age and output if the user is an adult or not
+# #Q1) Ask user for their age and output if the user is an adult or not
+# age = int(input("Enter age: "))
+# if age >= 18:
+#     print ("You're an Adult")
+# else:
+#     print ("You're not an Adult")
+    
+# #Q2) Ask the user if monkey A and monkey B are smiling. If either or oth are smiling, you are in trouble
+# monkeyA_smiling = bool(input("Is monkey A smiling? "))
+# monkeyB_smiling = bool(input("Is monkey B smiling? "))
+# if monkeyA_smiling or monkeyB_smiling:
+#     print ("You're in trouble.")
+# else:
+#     print ("You're not in trouble.")
+    
+# #Q3) Ask user if he/she is on vacation and if it is a weekday. output if the user can sleep in late
+# vacation = bool(input("Are you on vacation?"))
+# weekday = bool(input("is it a weekday?"))
+# if vacation or  not weekday:
+#     print("Sojao")
+# else:
+#     print("You have to wake up")
+    
+# #Q4) Ask user for their lucky number and output if the lucky number is odd or even
+# lucky_num = int(input("What's your lucky number: "))
+# if lucky_num % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
+    
+#Q1) Ask the user for the age. Output if the user is a child, teen or an adult
+from hashlib import _FileDigestFileObj
+
+
 age = int(input("Enter age: "))
 if age >= 18:
     print ("You're an Adult")
+elif age < 13:
+    print ("You're a child")
 else:
-    print ("You're not an Adult")
-    
-#Q2) Ask the user if monkey A and monkey B are smiling. If either or oth are smiling, you are in trouble
-monkeyA_smiling = bool(input("Is monkey A smiling? "))
-monkeyB_smiling = bool(input("Is monkey B smiling? "))
-if monkeyA_smiling or monkeyB_smiling:
-    print ("You're in trouble.")
-else:
-    print ("You're not in trouble.")
-    
-#Q3) Ask user if he/she is on vacation and if it is a weekday. output if the user can sleep in late
-vacation = bool(input("Are you on vacation?"))
-weekday = bool(input("is it a weekday?"))
-if vacation or  not weekday:
-    print("Sojao")
-else:
-    print("You have to wake up")
-    
-#Q4) Ask user for their lucky number and output if the lucky number is odd or even
+    print("You're a teen")
+
+#Q2) Ask the user for the lucky number and output if the its even or odd and if it is divisible by 10
 lucky_num = int(input("What's your lucky number: "))
-if lucky_num % 2 == 0:
+if lucky_num % 10 == 0:
+    print("Even and divisible by 10")
+elif lucky_num % 2 ==0:
     print("Even")
 else:
     print("Odd")
+    
