@@ -64,7 +64,6 @@
 #     print("Odd")
     
 #Q1) Ask the user for the age. Output if the user is a child, teen or an adult
-from hashlib import _FileDigestFileObj
 
 
 age = int(input("Enter age: "))
