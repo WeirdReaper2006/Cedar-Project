@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09811921-e2b6-4a5e-8217-e7c8b97a0137</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>16_Sept_23.py</StartupFile>
+    <StartupFile>23_Sept.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="16_Sept_23.py" />
+    <Compile Include="23_Sept.py" />
     <Compile Include="9_Sept_23.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
