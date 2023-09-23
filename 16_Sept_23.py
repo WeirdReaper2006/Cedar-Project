@@ -54,9 +54,41 @@ for line in range(1, num + 1):
     
     # Print '#' characters for each row
     for hashes in range(line * 2 - 1):
-        print("# ", end="")
+        print("#", end="")
     
     # Move to the next line for the next row
     print()
 
 #Q5) Ask user for the number of fishes and size of the fsh and print that many fishes
+num = int(input("Enter number of fishes to be printed: "))
+i = num
+
+#1st pyramid
+for line in range(1, num + 1):
+    # Print spaces for each row
+    for spaces in range(num - line):
+        print(" ", end="")
+    
+    # Print '#' characters for each row
+    for hashes in range(line * 2 - 1):
+        print("#", end="")
+    
+    # Move to the next line for the next row
+    print()
+
+#row of hashes
+print (" ", end = " ")
+print ("#" * i)
+
+#2nd pyramid
+for line in range(1, num + 1):
+    # Print spaces for each row
+    for spaces in range(num - line):
+        print(" ", end="")
+    
+    # Print '#' characters for each row
+    for hashes in range(line * 2 - 1):
+        print("#", end="")
+    
+    # Move to the next line for the next row
+    print()
