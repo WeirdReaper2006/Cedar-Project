@@ -56,27 +56,41 @@
 
 # func2()
 
-#LISTS
 #ARRAYS : python cant have arrays so we use lists
-list1 = []
-list1.append("wasim akram")
-list1.append("virat kohli")
-list1.append("viv richards")
-print("value at index 2 =", list1[2])
-print("Lenght of list =", len(list1))
-list1[2] = "shahid afridi"
-for i in range(len(list1)):
-    print(list1[i])
+# list1 = []
+# list1.append("wasim akram")
+# list1.append("virat kohli")
+# list1.append("viv richards")
+# print("value at index 2 =", list1[2])
+# print("Lenght of list =", len(list1))
+# list1[2] = "shahid afridi"
+# for i in range(len(list1)):
+#     print(list1[i])
 
-list2 = [0,0,0,0,0]
-print("values in list2")
-for i in range(len(list2)):
-    print(list2[i])
+# list2 = [0,0,0,0,0]
+# print("values in list2")
+# for i in range(len(list2)):
+#     print(list2[i])
 
-#arrayname = [initVal for i in range(size)]
-list3 = [0 for i in range(100)]
-print("list 3 values")
-for i in range(len(list3)):
-    print("index",i,"=",list3[i])
+# #arrayname = [initVal for i in range(size)]
+# list3 = [0 for i in range(100)]
+# print("list 3 values")
+# for i in range(len(list3)):
+#     print("index",i,"=",list3[i])
     
+#Task 1:
+names = []
+for i in range(10):
+    name1 = input("Enter a name: ")
+    names.append(name1)
+    
+print (names)
 
+#Task 2:
+output = "Output not found"
+name2 = input("Enter a name: ")
+for i in range(len(names)):
+    if name2 == names[i]:
+        output = f"Index is {i}"
+
+print (output)
