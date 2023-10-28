@@ -9,6 +9,8 @@ def inputOddNumber():
 newNumber = inputOddNumber()
 print ("Number entered =",newNumber)
 
+###########################################################
+
 def OutputSmbol(numberofsymbols, symbol):
     for count in range(numberofsymbols):
         print (symbol, end="")
@@ -16,3 +18,14 @@ def OutputSmbol(numberofsymbols, symbol):
     
 #main program starts here
 OutputSmbol(10, "$")
+
+###########################################################
+
+def sumRange( firstValue, lastValue):
+    sum = 0
+    for thisValue in range(firstValue, lastValue+1):
+        sum = sum + thisValue
+    return sum
+#main program starts here
+newNum = sumRange(1, 10)
+print (newNum)
