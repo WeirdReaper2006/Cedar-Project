@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="OCTOBER\14_Oct.py" />
+    <Compile Include="OCTOBER\28_Oct.py" />
     <Compile Include="SEPTEMBER\16_Sept_23.py" />
     <Compile Include="SEPTEMBER\23_Sept.py" />
     <Compile Include="SEPTEMBER\9_Sept_23.py" />
