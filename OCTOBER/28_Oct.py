@@ -1,5 +1,3 @@
-#PROCEDURE = VOID Function
-#FUNCTION = Fruitful functions
 def inputOddNumber():
     number = 0
     while number % 2 == 0:
@@ -97,6 +95,7 @@ print (output)
 
 #Task 3, 4, 5 and 6:
 #(Assuming that the total marks for the quiz is 10)
+
 cs_marks = []
 highest = 0
 lowest = 10
@@ -105,11 +104,11 @@ std_names = []
 highest_index = 0
 lowest_index = 0
     
-for i in range (1, 66):
+for i in range (10):
     name = input ("Enter the student's name: ")
     std_names.append(name)
     
-    mark = int(input(f"Enter {i} student's marks: "))
+    mark = int(input(f"Enter {i + 1} student's marks: "))
     cs_marks.append(mark)
     sum = sum + mark
     if mark > highest:
@@ -121,5 +120,22 @@ for i in range (1, 66):
         lowest_index = i
         lowest_student = std_names[i]
         
-average = sum /65
+average = sum /10
 print(f"The student with the highest marks is {highest_student}. The student with the lowest marks is {lowest_student}")
+
+#Task 7:
+
+n = len(cs_marks)
+for i in range(n - 1):
+    swap = False
+    for j in range(0, n - i - 1):
+        if cs_marks[j] < cs_marks[j + 1]:  # Change the comparison to sort in descending order
+            cs_marks[j], cs_marks[j + 1] = cs_marks[j + 1], cs_marks[j]
+            std_names[j], std_names[j + 1] = std_names[j + 1], std_names[j]
+            swap = True
+    if not swap:
+        break
+
+print("Students sorted by marks in descending order:")
+for i in range(10):
+    print(f"{std_names[i]}: {cs_marks[i]}")
