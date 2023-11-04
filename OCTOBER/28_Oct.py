@@ -105,10 +105,12 @@ highest_index = 0
 lowest_index = 0
     
 for i in range (10):
-    name = input ("Enter the student's name: ")
+    name = input (f"Enter {i + 1} student's name: ")
     std_names.append(name)
     
     mark = int(input(f"Enter {i + 1} student's marks: "))
+    while mark < 0 and mark > 10:
+        mark = int(input(f"Enter {i + 1} student's marks: "))
     cs_marks.append(mark)
     sum = sum + mark
     if mark > highest:
