@@ -16,4 +16,15 @@ def FindSumFrom1 (num3):
     else:
         return 1
         
-print (FindSumFrom1 (15))
+#Task3: Make a recursive funtion that takes a position number value as input and output fibonacci sequence till that position
+def Fibonacci (position):
+    if position == 1:
+        return [1]
+    elif position == 2:
+        return [1,1]
+    else:
+        fib_sequence = Fibonacci (position - 1)
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+        return fib_sequence
+    
+print (Fibonacci(8))
