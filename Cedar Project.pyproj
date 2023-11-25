@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09811921-e2b6-4a5e-8217-e7c8b97a0137</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NOVEMBER\4_Nov.py</StartupFile>
+    <StartupFile>NOVEMBER\25_Nov.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,9 +21,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="NOVEMBER\25_Nov.py" />
     <Compile Include="NOVEMBER\4_Nov.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="NOVEMBER\tic_tac_toe.py" />
     <Compile Include="OCTOBER\14_Oct.py" />
     <Compile Include="OCTOBER\28_Oct.py" />
     <Compile Include="SEPTEMBER\16_Sept_23.py" />
